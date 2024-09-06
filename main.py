@@ -87,21 +87,21 @@ def main():
     )
     grand_agent_executor = AgentExecutor(agent=grand_agent, tools=tools, verbose=True)
 
-    # print(
-    #     grand_agent_executor.invoke(
-    #         {
-    #             "input": "which season has the most episodes?",
-    #         }
-    #     )
-    # )
-
     print(
         grand_agent_executor.invoke(
             {
-                "input": "generate and save in current working directory 15 QR codes that point to www.udemy.com/course/langchain, you have qrcode package installed already",
+                "input": "which season has the most episodes?",
             }
         )
     )
+
+    # print(
+    #     grand_agent_executor.invoke(
+    #         {
+    #             "input": "generate and save in current working directory 15 QR codes that point to www.udemy.com/course/langchain, you have qrcode package installed already",
+    #         }
+    #     )
+    # )
 
 
 if __name__ == "__main__":
